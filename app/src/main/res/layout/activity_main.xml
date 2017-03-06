@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:gzh="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.gzh.gbanner.MainActivity">
+    <!--        属性名	                          属性说明	                          属性值-->
+    <!--        isAutoPlay	                  是否支持自动轮播	             boolean类型，默认为true-->
+    <!--        AutoPlayTime	               图片轮播时间间隔	                 int值，默认为5s-->
+    <!--        pointNormal	                 指示器未选中时状态点	      drawable，不设置的话为默认状态点-->
+    <!--        pointSelect	                 指示器选中时状态点	          drawable，不设置的话为默认状态点-->
+    <!--        pointsVisibility	            是否显示指示器	              boolean类型，默认为true-->
+    <!--        pointsPosition	                指示点显示位置	        LEFT、CENTER、RIGHT类型，默认为CENTER-->
+    <!--        pointsContainerBackground	      指示器背景	                   可自定义设置指示器背景-->
+    <!--        pointContainerPosition	       指示器显示位置	          TOP、BOTTOM类型，默认为BOTTOM-->
+    <!--        pointContainerLeftRightPadding 指示点容器左右内间距	            dimension，默认为10dp-->
+    <!--        pointTopBottomPadding	       指示点上下内间距	                dimension，默认为6dp-->
+    <!--        pointLeftRightPadding	       指示点左右内间距	                dimension，默认为3dp-->
+    <!--        tipTextColor	               提示文案的文字颜色	                  reference-->
+    <!--        tipTextSize	                   提示文案的文字大小	            dimension，默认为10dp-->
+    <!--        isShowNumberIndicator	       是否显示数字指示器	         boolean,默认为false不显示-->
+    <!--        numberIndicatorBacgroud	         数字指示器背景	                      reference-->
+    <!--        isShowIndicatorOnlyOne	当只有一张图片的时候是否显示指示点	boolean，默认为false，不显示-->
+    <!--        pageChangeDuration	             图片切换速度	                 int值，默认为1000ms-->
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.gzh.bannerlibrary.GBanner
+                android:id="@+id/xbanner"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                gzh:pointSelect="@drawable/shape_selected"
+                gzh:pointsContainerBackground="#84000000"
+                gzh:tipTextSize="20sp"
+                gzh:pointsPosition="RIGHT"
+                gzh:pointNormal="@drawable/shape_noraml"
+                gzh:isShowIndicatorOnlyOne="true"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
