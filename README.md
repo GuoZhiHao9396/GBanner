@@ -1,5 +1,5 @@
 # GBanner
-#图片轮番控件
+# 图片轮番控件
 
 ![image](https://github.com/GuoZhiHao9396/GBanner/blob/master/app/src/main/res/raw/test.gif)
 
@@ -19,7 +19,7 @@ Add it in your root build.gradle at the end of repositories:
      }
 ```
 
-#属性介绍
+# 属性介绍
 
 | 属性名 | 属性说明 | 属性值 |
 | ------------ | ------------- | ------------ |
@@ -41,7 +41,7 @@ Add it in your root build.gradle at the end of repositories:
 | isShowIndicatorOnlyOne|当只有一张图片的时候是否显示指示点| boolean，默认为false，不显示 |
 | pageChangeDuration|图片切换速度| int值，默认为1000ms |
 
-#方法介绍
+# 方法介绍
 
 ```java
       stopAutoPlay()：停止播放
@@ -63,7 +63,7 @@ Add it in your root build.gradle at the end of repositories:
       setmPointContainerPosition(position)：设置指示器容器的位置（对应位置 TOP,BOTTOM）
 ```
 
-#使用介绍
+# 使用介绍
 
 1.在xml布局中添加相关属性
 ```xml
@@ -96,11 +96,11 @@ Add it in your root build.gradle at the end of repositories:
    <uses-permission android:name="android.permission.INTERNET" />
 ```
 
-#致谢
+# 致谢
 
    [Mr.XIAO](https://github.com/xiaohaibin)
 
-#License
+# License
 ```text
 Copyright 2017 ZhiHao Guo
 
